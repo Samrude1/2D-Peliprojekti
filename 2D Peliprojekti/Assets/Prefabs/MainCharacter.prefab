@@ -194,10 +194,10 @@ MonoBehaviour:
   standingCollider: {fileID: 77712591}
   crouchingCollider: {fileID: 544239750}
   speed: 2
-  jumpPower: 800
+  jumpPower: 8
   runValue: 1
   crouchValue: 0.5
-  headCheckLength: 0.28
+  headCheckLength: 0.3
   isGrounded: 0
   isRunning: 0
   isCrouched: 0
