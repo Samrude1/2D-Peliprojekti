@@ -21,7 +21,7 @@ public class CharacterMovement : MonoBehaviour
     public float headCheckLength; //Raycast
 
     private bool isFacingRight = true;
-    public bool isGrounded = false;
+    public bool isGrounded = false;     //Nää boolit on vielä kehityvaiheessa public ni näkee mitä hahmo tekee pelin aikana
     public bool isRunning = false;
     public bool isCrouched = false;
     
@@ -40,7 +40,7 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
-        GroundCheck();
+        
         Crouch();
         Flip();
         Jump();
@@ -51,7 +51,7 @@ public class CharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        
+        GroundCheck();   
     }
 
     void GroundCheck()
@@ -86,11 +86,25 @@ public class CharacterMovement : MonoBehaviour
 
     void Jump()
     {
+        
+        animator.SetFloat("yVelocity", rb.velocity.y);
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isGrounded = false;
-            rb.AddForce(new Vector2(0f, jumpPower));
+            rb.AddForce(new Vector2(0f, jumpPower * 100f));
         }
+
+        if(rb.velocity.y > 0 || rb.velocity.y < 0)   
+        {
+            animator.SetBool("Jump", true);
+        }
+        else 
+        {
+            animator.SetBool("Jump", false);
+            
+        }
+        
     }
 
     void Run()
@@ -113,7 +127,7 @@ public class CharacterMovement : MonoBehaviour
             runValue = 1f;
         }
         Debug.Log(rb.velocity.x);
-        // 0 idle, 4 walk, 8 run
+        // 0 idle, 4 walk, 8 run jos speed on 2 //blendtree arvot animatorissa (Moving tree)
 
         animator.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
     }
@@ -131,7 +145,7 @@ public class CharacterMovement : MonoBehaviour
             crouchingCollider.enabled = true;
             crouchValue = 0.3f;
         }
-        else //(!isHeadHitting)
+        else
         {
             isCrouched = false;
             animator.SetBool("Crouch", false);
