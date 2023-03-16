@@ -2133,26 +2133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 6841598977803468981, guid: 1105543beaa1fa34293a1c05f94416fc, type: 3}
-      propertyPath: wallJumpingTime
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6841598977803468981, guid: 1105543beaa1fa34293a1c05f94416fc, type: 3}
-      propertyPath: wallLayer.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 6841598977803468981, guid: 1105543beaa1fa34293a1c05f94416fc, type: 3}
-      propertyPath: wallSlidingSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6841598977803468981, guid: 1105543beaa1fa34293a1c05f94416fc, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 6841598977803468981, guid: 1105543beaa1fa34293a1c05f94416fc, type: 3}
-      propertyPath: wallJumpingDuration
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 6841598977803468982, guid: 1105543beaa1fa34293a1c05f94416fc, type: 3}
       propertyPath: m_RootOrder
       value: 1

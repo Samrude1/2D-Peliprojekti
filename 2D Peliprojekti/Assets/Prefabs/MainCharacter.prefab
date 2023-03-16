@@ -237,10 +237,14 @@ MonoBehaviour:
   yMaxValue: 4
   yMinValue: -4
   wallSlidingSpeed: 1
+  isWallSliding: 0
   isGrounded: 0
   isRunning: 0
   isCrouched: 0
   isWallJumping: 0
+  wallJumpingTime: 0.2
+  wallJumpingDuration: 0.4
+  walljumpingPower: {x: 8, y: 16}
 --- !u!95 &1176138760
 Animator:
   serializedVersion: 5
