@@ -7,7 +7,9 @@ public class CharacterMovement : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] Transform overheadCheckCollider;
+    [SerializeField] Transform wallCheckCollider;
     [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask wallLayer;
     [SerializeField] BoxCollider2D standingCollider;
     [SerializeField] CircleCollider2D crouchingCollider;
     [SerializeField] float speed = 1;
@@ -19,16 +21,25 @@ public class CharacterMovement : MonoBehaviour
     public float runValue = 1f;
     public float crouchValue = 0.5f;
     public float headCheckLength; //Raycast
+    public int yMaxValue = 4;
+    public int yMinValue = -4;
+    public float wallSlidingSpeed;
 
+    private bool isWallSliding;
     private bool isFacingRight = true;
     public bool isGrounded = false;     //Nää boolit on vielä kehityvaiheessa public ni näkee mitä hahmo tekee pelin aikana
     public bool isRunning = false;
     public bool isCrouched = false;
+    public bool isWallJumping;
+    private float wallJumpingDirection;
+    private float wallJumpingTime = 0.2f;
+    private float wallJumpingCounter;
+    private float wallJumpingDuration = 0.4f;
+    public Vector2 walljumpingPower = new Vector2(8f, 16f);
     
     Animator animator;
-  
-    
 
+   
     // Start is called before the first frame update
     void Awake()
     {
@@ -42,10 +53,15 @@ public class CharacterMovement : MonoBehaviour
         horizontalMovement = Input.GetAxisRaw("Horizontal");
         
         Crouch();
-        Flip();
         Jump();
         Run();
-             
+        WallSlide();
+        WallJump();
+
+        if(!isWallJumping)
+        {
+            Flip();
+        }
     }
 
     private void FixedUpdate()
@@ -67,7 +83,11 @@ public class CharacterMovement : MonoBehaviour
 
     void Move()
     {
-        rb.velocity = new Vector2(horizontalMovement * speed * 100 * runValue * crouchValue  * Time.fixedDeltaTime, rb.velocity.y);
+        if(!isWallJumping)
+        {
+            rb.velocity = new Vector2(horizontalMovement * speed * 100 * runValue * crouchValue * Time.fixedDeltaTime, rb.velocity.y);
+        }
+        
     }
 
     void Flip()
@@ -95,7 +115,7 @@ public class CharacterMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpPower * 100f));
         }
 
-        if(rb.velocity.y > 0 || rb.velocity.y < 0)   
+        if(rb.velocity.y > yMaxValue || rb.velocity.y < yMinValue)   
         {
             animator.SetBool("Jump", true);
         }
@@ -160,6 +180,63 @@ public class CharacterMovement : MonoBehaviour
             return hit;
         }
 
+    }
+
+    private bool IsWalled()
+    {
+        return Physics2D.OverlapCircle(wallCheckCollider.position, 0.2f, wallLayer);   
+    }
+
+    private void WallSlide()
+    {
+        isWallSliding = false;
+        if(IsWalled() && !isGrounded && horizontalMovement !=0 && rb.velocity.y < 0)
+        {
+            isWallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            animator.SetBool("Sliding", true);
+        }
+        else
+        {
+            isWallSliding = false;
+            animator.SetBool("Sliding", false);
+        }
+    }
+
+    private void WallJump()
+    {
+        if(isWallSliding)
+        {
+            isWallJumping= false;
+            wallJumpingDirection = -transform.localScale.x;
+            wallJumpingCounter = wallJumpingTime;
+
+            CancelInvoke(nameof(StopWallJumping));
+        }
+        else
+        {
+            wallJumpingCounter -= Time.deltaTime;
+        }
+        if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0)
+        {
+            isWallJumping = true;
+            rb.velocity = new Vector2(wallJumpingDirection * walljumpingPower.x, walljumpingPower.y);
+            wallJumpingCounter = 0f;
+
+            if(transform.localScale.x != wallJumpingDirection)
+            {
+                isFacingRight = !isFacingRight;
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
+            }
+            Invoke(nameof(StopWallJumping), wallJumpingDuration);
+        }
+    }
+
+    private void StopWallJumping()
+    {
+        isWallJumping = false;
     }
 
     private void OnDrawGizmos()
