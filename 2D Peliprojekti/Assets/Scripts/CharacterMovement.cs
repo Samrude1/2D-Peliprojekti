@@ -25,16 +25,16 @@ public class CharacterMovement : MonoBehaviour
     public int yMinValue = -4;
     public float wallSlidingSpeed;
 
-    private bool isWallSliding;
+    public bool isWallSliding;
     private bool isFacingRight = true;
     public bool isGrounded = false;     //Nää boolit on vielä kehityvaiheessa public ni näkee mitä hahmo tekee pelin aikana
     public bool isRunning = false;
     public bool isCrouched = false;
     public bool isWallJumping;
     private float wallJumpingDirection;
-    private float wallJumpingTime = 0.2f;
+    public float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.4f;
+    public float wallJumpingDuration = 0.4f;
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
     
     Animator animator;
@@ -110,11 +110,19 @@ public class CharacterMovement : MonoBehaviour
         animator.SetFloat("yVelocity", rb.velocity.y);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            isGrounded = false;
+        {    
             rb.AddForce(new Vector2(0f, jumpPower * 100f));
+            isGrounded = false;
+            wallJumpingTime = 0;
+            wallJumpingDuration = 0;
+            wallJumpingCounter = 0;
         }
-
+        else if(!isGrounded)
+        {
+            wallJumpingTime = 0.2f;
+            wallJumpingDuration = 0.4f;
+            wallJumpingCounter = 0;
+        }
         if(rb.velocity.y > yMaxValue || rb.velocity.y < yMinValue)   
         {
             animator.SetBool("Jump", true);
@@ -190,7 +198,7 @@ public class CharacterMovement : MonoBehaviour
     private void WallSlide()
     {
         isWallSliding = false;
-        if(IsWalled() && !isGrounded && horizontalMovement !=0 && rb.velocity.y < 0)
+        if(IsWalled() && !isGrounded && horizontalMovement != 0 && rb.velocity.y < 0)
         {
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
