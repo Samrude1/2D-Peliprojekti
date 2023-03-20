@@ -16,7 +16,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float jumpPower = 250;
 
     const float groundCheckRadius = 0.2f;
-   //const float overheadCheckRadius = 0.2f; // Vaihdoin tän Raycastiin
+    //const float overheadCheckRadius = 0.2f; // Vaihdoin tän Raycastiin
     float horizontalMovement;
     public float runValue = 1f;
     public float crouchValue = 0.5f;
@@ -24,6 +24,10 @@ public class CharacterMovement : MonoBehaviour
     public int yMaxValue = 4;
     public int yMinValue = -4;
     public float wallSlidingSpeed;
+    private float wallJumpingDirection;
+    public float wallJumpingTime = 0.2f;
+    private float wallJumpingCounter;
+    public float wallJumpingDuration = 0.4f;
 
     public bool isWallSliding;
     private bool isFacingRight = true;
@@ -31,10 +35,7 @@ public class CharacterMovement : MonoBehaviour
     public bool isRunning = false;
     public bool isCrouched = false;
     public bool isWallJumping;
-    private float wallJumpingDirection;
-    public float wallJumpingTime = 0.2f;
-    private float wallJumpingCounter;
-    public float wallJumpingDuration = 0.4f;
+   
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
     
     Animator animator;
