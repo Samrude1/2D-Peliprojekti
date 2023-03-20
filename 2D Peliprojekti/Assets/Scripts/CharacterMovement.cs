@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    
     Rigidbody2D rb;
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] Transform overheadCheckCollider;
@@ -14,6 +15,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] CircleCollider2D crouchingCollider;
     [SerializeField] float speed = 1;
     [SerializeField] float jumpPower = 250;
+    public GameObject damageParticles;
 
     const float groundCheckRadius = 0.2f;
     //const float overheadCheckRadius = 0.2f; // Vaihdoin tän Raycastiin
@@ -40,7 +42,7 @@ public class CharacterMovement : MonoBehaviour
     
     Animator animator;
 
-   
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -58,7 +60,6 @@ public class CharacterMovement : MonoBehaviour
         Run();
         WallSlide();
         WallJump();
-
         if(!isWallJumping)
         {
             Flip();
@@ -89,6 +90,7 @@ public class CharacterMovement : MonoBehaviour
             rb.velocity = new Vector2(horizontalMovement * speed * 100 * runValue * crouchValue * Time.fixedDeltaTime, rb.velocity.y);
         }
         
+       
     }
 
     void Flip()
@@ -258,5 +260,12 @@ public class CharacterMovement : MonoBehaviour
         Gizmos.DrawLine(from, to);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Hazard")
+        {
+            Instantiate(damageParticles, transform.position, Quaternion.identity);
+        }
+    }
 
 }
