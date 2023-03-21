@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 1176138760}
   - component: {fileID: 544239750}
   - component: {fileID: 77712591}
-  - component: {fileID: 565883390}
+  - component: {fileID: 1547637140893623718}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -232,7 +232,7 @@ MonoBehaviour:
   crouchingCollider: {fileID: 544239750}
   speed: 2
   jumpPower: 8
-  damageParticles: {fileID: 5105573908311145243, guid: 7cbbd3ff771f07c43a37327a189e1100, type: 3}
+  damageParticles: {fileID: 5105573908311145243, guid: 00cb3222c82c61d469accff5b7beb819, type: 3}
   runValue: 1
   crouchValue: 0.5
   headCheckLength: 0.3
@@ -310,7 +310,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49087477, y: 1.3022816}
   m_EdgeRadius: 0
---- !u!114 &565883390
+--- !u!114 &1547637140893623718
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6841598977803468976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4691c885778120544ba7c4b0b23f11d4, type: 3}
+  m_Script: {fileID: 11500000, guid: cb70972787d5d254e8e4c679e597a904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints:
