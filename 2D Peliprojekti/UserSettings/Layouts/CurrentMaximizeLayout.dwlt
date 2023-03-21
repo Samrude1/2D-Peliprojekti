@@ -14,26 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 12}
+  - {fileID: 15}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-    width: 1920
-    height: 957
-  m_MinSize: {x: 503, y: 492}
-  m_MaxSize: {x: 18097, y: 14042}
-  vertical: 0
-  controlID: 3117
-=======
-    width: 1206
-    height: 665
+    width: 2560
+    height: 1299
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 128
->>>>>>> parent of d89451b (UI)
+  controlID: 6267
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -54,17 +45,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 363
+    x: 1266
     y: 73
-    width: 1101
-    height: 836
-=======
-    x: 1685
-    y: 321
-    width: 326
-    height: 379
->>>>>>> parent of d89451b (UI)
+    width: 648
+    height: 766
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -80,7 +64,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
+  m_EnterPlayModeBehavior: 1
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -103,7 +87,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -112,17 +96,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
-      width: 1101
-      height: 815
-    m_Scale: {x: 0.5734375, y: 0.5734375}
-    m_Translation: {x: 550.5, y: 407.5}
-=======
-      width: 326
-      height: 358
-    m_Scale: {x: 0.16979167, y: 0.16979167}
-    m_Translation: {x: 163, y: 179}
->>>>>>> parent of d89451b (UI)
+      width: 648
+      height: 745
+    m_Scale: {x: 0.3375, y: 0.33749998}
+    m_Translation: {x: 324, y: 372.49997}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -130,21 +107,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
-<<<<<<< HEAD
-      y: -710.6267
+      y: -1103.7037
       width: 1920
-      height: 1421.2534
+      height: 2207.4075
     m_MinimalGUI: 1
-  m_defaultScale: 0.5734375
-  m_LastWindowPixelSize: {x: 1101, y: 836}
-=======
-      y: -1054.2332
-      width: 1920
-      height: 2108.4663
-    m_MinimalGUI: 1
-  m_defaultScale: 0.16979167
-  m_LastWindowPixelSize: {x: 326, y: 379}
->>>>>>> parent of d89451b (UI)
+  m_defaultScale: 0.3375
+  m_LastWindowPixelSize: {x: 648, y: 766}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -164,26 +132,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 9}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 1466
-    height: 957
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
-  vertical: 1
-  controlID: 3063
-=======
-    width: 927
-    height: 665
+    width: 1916
+    height: 1299
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 78
->>>>>>> parent of d89451b (UI)
+  controlID: 6268
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,25 +158,17 @@ MonoBehaviour:
   m_Children:
   - {fileID: 5}
   - {fileID: 7}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 1466
-    height: 857
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
-  vertical: 0
-  controlID: 3064
-=======
-    width: 927
-    height: 400
+    width: 1916
+    height: 787
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 67
->>>>>>> parent of d89451b (UI)
+  controlID: 6240
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,13 +186,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 363
-    height: 857
-=======
-    width: 210
-    height: 400
->>>>>>> parent of d89451b (UI)
+    width: 553
+    height: 787
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -269,17 +215,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
     y: 73
-    width: 362
-    height: 836
-=======
-    x: 1086
-    y: 321
-    width: 209
-    height: 379
->>>>>>> parent of d89451b (UI)
+    width: 552
+    height: 766
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -288,15 +227,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-      m_SelectedIDs: 10d9ffff
+      m_SelectedIDs: 0e290000
       m_LastClickedID: 0
-      m_ExpandedIDs: 22fbffffe0680000
-=======
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 24fbffff
->>>>>>> parent of d89451b (UI)
+      m_ExpandedIDs: acebfffff8edffff66f5ffff24fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -330,30 +263,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 363
+    x: 553
     y: 0
-    width: 1103
-    height: 857
-=======
-    x: 210
-    y: 0
-    width: 389
-    height: 400
->>>>>>> parent of d89451b (UI)
+    width: 713
+    height: 787
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 2}
+  m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
-  - {fileID: 2}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 9}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,17 +300,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 363
+    x: 553
     y: 73
-    width: 1101
-    height: 836
-=======
-    x: 1296
-    y: 321
-    width: 387
-    height: 379
->>>>>>> parent of d89451b (UI)
+    width: 711
+    height: 766
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -416,7 +335,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -624,8 +543,8 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 1
-      snapOffset: {x: 0, y: 0}
+      displayed: 0
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
@@ -642,15 +561,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: 2.5852418, y: 0.46771023, z: 0.41272986}
+    m_Target: {x: -11.09242, y: 1.7898811, z: -0.09980905}
     speed: 2
-    m_Value: {x: 3.0028396, y: 0.4046557, z: 0.41721004}
-=======
-    m_Target: {x: -0.3459996, y: 38.228058, z: -0.74795943}
-    speed: 2
-    m_Value: {x: -0.3459996, y: 38.228058, z: -0.74795943}
->>>>>>> parent of d89451b (UI)
+    m_Value: {x: -11.09242, y: 1.7898811, z: -0.09980905}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -701,15 +614,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-    m_Target: 10.403994
+    m_Target: 11.599054
     speed: 2
-    m_Value: 9.955975
-=======
-    m_Target: 47.43105
-    speed: 2
-    m_Value: 47.43105
->>>>>>> parent of d89451b (UI)
+    m_Value: 11.599054
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -742,8 +649,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-=======
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -756,10 +661,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 453
-    y: 82
-    width: 817
-    height: 749
+    x: 550
+    y: 144
+    width: 686
+    height: 706
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -768,66 +673,15 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: -25287276345878181, guid: ebb6d67e39ab9df4b9e657f725b4ab0f, type: 2}
-    - {fileID: 2485343910712204835, guid: ebb6d67e39ab9df4b9e657f725b4ab0f, type: 2}
-    - {fileID: -955532262251821078, guid: ebb6d67e39ab9df4b9e657f725b4ab0f, type: 2}
-    - {fileID: -9089918970040240102, guid: ebb6d67e39ab9df4b9e657f725b4ab0f, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.691236
+    - e00: 0.9616797
       e01: 0
       e02: 0
-      e03: 158.22495
+      e03: -27.441864
       e10: 0
-      e11: 0.691236
+      e11: 0.9616797
       e12: 0
-      e13: 337.63434
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1.0329481
-      e01: 0
-      e02: 0
-      e03: -0.9687805
-      e10: 0
-      e11: 1.0329481
-      e12: 0
-      e13: 325.59854
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1.3885468
-      e01: 0
-      e02: 0
-      e03: -132.30481
-      e10: 0
-      e11: 1.3885468
-      e12: 0
-      e13: 264.57928
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1.207432
-      e01: 0
-      e02: 0
-      e03: -32.388565
-      e10: 0
-      e11: 1.207432
-      e12: 0
-      e13: 296.51315
+      e13: 241.46436
       e20: 0
       e21: 0
       e22: 1
@@ -849,7 +703,7 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 1
+  m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &10
@@ -867,10 +721,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 599
+    x: 1266
     y: 0
-    width: 328
-    height: 400
+    width: 650
+    height: 787
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -886,7 +740,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
->>>>>>> parent of d89451b (UI)
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ProjectBrowser
@@ -895,29 +748,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 857
-    width: 1466
-    height: 100
-=======
-    y: 400
-    width: 927
-    height: 265
->>>>>>> parent of d89451b (UI)
+    y: 787
+    width: 1916
+    height: 512
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 10}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 10}
-  - {fileID: 11}
+  - {fileID: 12}
+  - {fileID: 13}
+  - {fileID: 14}
   m_Selected: 0
-<<<<<<< HEAD
   m_LastSelected: 1
---- !u!114 &10
-=======
-  m_LastSelected: 2
 --- !u!114 &12
->>>>>>> parent of d89451b (UI)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -937,17 +780,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-    y: 930
-    width: 1465
-    height: 79
-=======
-    x: 1086
-    y: 721
-    width: 926
-    height: 244
->>>>>>> parent of d89451b (UI)
+    y: 860
+    width: 1915
+    height: 491
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -966,38 +802,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
     - Assets/Scripts
-=======
-    - Assets/Scenes/DevScenes
->>>>>>> parent of d89451b (UI)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
-<<<<<<< HEAD
   - Assets/Scripts
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\aleks\Documents\GitHub\2D-Peliprojekti\2D Peliprojekti
-=======
-  - Assets/Scenes/DevScenes
-  m_LastFoldersGridSize: 96
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Documents\GitHub\2D-Peliprojekti\2D Peliprojekti
->>>>>>> parent of d89451b (UI)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-    m_SelectedIDs: 446d0000
-    m_LastClickedID: 27972
-    m_ExpandedIDs: 00000000b86b0000ba6b0000bc6b000000ca9a3b
-=======
-    m_SelectedIDs: c46b0000
-    m_LastClickedID: 27588
-    m_ExpandedIDs: 000000003a6a00003c6a0000
->>>>>>> parent of d89451b (UI)
+    m_SelectedIDs: e06c0000
+    m_LastClickedID: 27872
+    m_ExpandedIDs: 00000000606b0000626b0000de6c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1013,7 +833,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1025,11 +845,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000b86b0000ba6b0000bc6b000000ca9a3b
-=======
-    m_ExpandedIDs: 000000003a6a00003c6a0000
->>>>>>> parent of d89451b (UI)
+    m_ExpandedIDs: 00000000606b0000626b0000de6c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1054,13 +870,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-<<<<<<< HEAD
-    m_SelectedInstanceIDs: 10d9ffff
-    m_LastClickedInstanceID: -9968
-=======
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
->>>>>>> parent of d89451b (UI)
+    m_SelectedInstanceIDs: 0e290000
+    m_LastClickedInstanceID: 10510
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1078,7 +889,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1087,10 +898,10 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &11
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1110,25 +921,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
-=======
-    x: 0
-    y: 854
-    width: 1966
-    height: 497
->>>>>>> parent of d89451b (UI)
+    x: 120
+    y: 871
+    width: 1489
+    height: 452
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-<<<<<<< HEAD
---- !u!114 &12
-=======
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1149,10 +950,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 9
-    y: 852
-    width: 1952
-    height: 490
+    x: 120
+    y: 871
+    width: 1489
+    height: 452
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1160,9 +961,8 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 78488
+  m_LastSelectedObjectID: -5226
 --- !u!114 &15
->>>>>>> parent of d89451b (UI)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1177,26 +977,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1466
+    x: 1916
     y: 0
-    width: 454
-    height: 957
-=======
-    x: 927
-    y: 0
-    width: 279
-    height: 665
->>>>>>> parent of d89451b (UI)
+    width: 644
+    height: 1299
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 13}
-  - {fileID: 14}
+  - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &13
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1216,17 +1009,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1466
+    x: 1916
     y: 73
-    width: 453
-    height: 936
-=======
-    x: 2013
-    y: 321
-    width: 278
-    height: 644
->>>>>>> parent of d89451b (UI)
+    width: 643
+    height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1239,13 +1025,13 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 432
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &14
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1265,10 +1051,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1466
-    y: 73
-    width: 453
-    height: 936
+    x: 1757
+    y: 147
+    width: 500
+    height: 1102
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

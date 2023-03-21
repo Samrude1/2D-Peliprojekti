@@ -14,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] CircleCollider2D crouchingCollider;
     [SerializeField] float speed = 1;
     [SerializeField] float jumpPower = 250;
+    [SerializeField] GameObject damageParticles;
 
     const float groundCheckRadius = 0.2f;
     //const float overheadCheckRadius = 0.2f; // Vaihdoin tän Raycastiin
@@ -256,6 +257,14 @@ public class CharacterMovement : MonoBehaviour
         Vector2 to = new Vector2(overheadCheckCollider.position.x, overheadCheckCollider.position.y + headCheckLength);
 
         Gizmos.DrawLine(from, to);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Hazard")
+        {
+            Instantiate(damageParticles, transform.position, Quaternion.identity);
+        }
     }
 
 
