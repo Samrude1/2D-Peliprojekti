@@ -22,6 +22,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of d879ce0 (Update)
     width: 2560
@@ -50,6 +51,14 @@ MonoBehaviour:
 =======
   controlID: 83888
 >>>>>>> parent of d879ce0 (Update)
+=======
+    width: 1206
+    height: 665
+  m_MinSize: {x: 400, y: 200}
+  m_MaxSize: {x: 32384, y: 16192}
+  vertical: 0
+  controlID: 128
+>>>>>>> parent of d89451b (UI)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -73,6 +82,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1268
     y: 73
     width: 696
@@ -84,10 +94,13 @@ MonoBehaviour:
     height: 836
 >>>>>>> Grafiikka-Aleksi
 =======
+=======
+>>>>>>> parent of d89451b (UI)
     x: 1685
     y: 321
     width: 326
     height: 379
+<<<<<<< HEAD
 >>>>>>> parent of d89451b (UI)
 =======
     x: 1272
@@ -95,6 +108,8 @@ MonoBehaviour:
     width: 694
     height: 759
 >>>>>>> parent of d879ce0 (Update)
+=======
+>>>>>>> parent of d89451b (UI)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -145,6 +160,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 696
       height: 740
     m_Scale: {x: 0.3625, y: 0.3625}
@@ -156,10 +172,13 @@ MonoBehaviour:
     m_Translation: {x: 550.5, y: 407.5}
 >>>>>>> Grafiikka-Aleksi
 =======
+=======
+>>>>>>> parent of d89451b (UI)
       width: 326
       height: 358
     m_Scale: {x: 0.16979167, y: 0.16979167}
     m_Translation: {x: 163, y: 179}
+<<<<<<< HEAD
 >>>>>>> parent of d89451b (UI)
 =======
       width: 694
@@ -167,6 +186,8 @@ MonoBehaviour:
     m_Scale: {x: 0.36145833, y: 0.36145833}
     m_Translation: {x: 347, y: 369}
 >>>>>>> parent of d879ce0 (Update)
+=======
+>>>>>>> parent of d89451b (UI)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -203,13 +224,18 @@ MonoBehaviour:
 >>>>>>> parent of d89451b (UI)
 =======
       x: -960
-      y: -1020.86456
+      y: -1054.2332
       width: 1920
-      height: 2041.7291
+      height: 2108.4663
     m_MinimalGUI: 1
+<<<<<<< HEAD
   m_defaultScale: 0.36145833
   m_LastWindowPixelSize: {x: 694, y: 759}
 >>>>>>> parent of d879ce0 (Update)
+=======
+  m_defaultScale: 0.16979167
+  m_LastWindowPixelSize: {x: 326, y: 379}
+>>>>>>> parent of d89451b (UI)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -234,6 +260,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -266,6 +293,14 @@ MonoBehaviour:
 =======
   controlID: 83889
 >>>>>>> parent of d879ce0 (Update)
+=======
+    width: 927
+    height: 665
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 1
+  controlID: 78
+>>>>>>> parent of d89451b (UI)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -285,6 +320,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -318,6 +354,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 83890
 >>>>>>> parent of d879ce0 (Update)
+=======
+    width: 927
+    height: 400
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 8096}
+  vertical: 0
+  controlID: 67
+>>>>>>> parent of d89451b (UI)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,6 +382,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 441
     height: 782
 =======
@@ -352,6 +397,10 @@ MonoBehaviour:
     width: 446
     height: 780
 >>>>>>> parent of d879ce0 (Update)
+=======
+    width: 210
+    height: 400
+>>>>>>> parent of d89451b (UI)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -381,6 +430,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 73
 <<<<<<< HEAD
@@ -391,10 +441,13 @@ MonoBehaviour:
     height: 836
 >>>>>>> Grafiikka-Aleksi
 =======
+=======
+>>>>>>> parent of d89451b (UI)
     x: 1086
     y: 321
     width: 209
     height: 379
+<<<<<<< HEAD
 >>>>>>> parent of d89451b (UI)
 =======
     x: 0
@@ -402,6 +455,8 @@ MonoBehaviour:
     width: 445
     height: 759
 >>>>>>> parent of d879ce0 (Update)
+=======
+>>>>>>> parent of d89451b (UI)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -409,6 +464,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
 <<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
@@ -432,6 +488,12 @@ MonoBehaviour:
       m_LastClickedID: -401222
       m_ExpandedIDs: 44b2faff7eb2faffa0b2fafffcd8ffff90d9ffffaaecffff12fbffffd8680000
 >>>>>>> parent of d879ce0 (Update)
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 24fbffff
+>>>>>>> parent of d89451b (UI)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -473,6 +535,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 441
     y: 0
     width: 827
@@ -489,6 +552,12 @@ MonoBehaviour:
     width: 826
     height: 780
 >>>>>>> parent of d879ce0 (Update)
+=======
+    x: 210
+    y: 0
+    width: 389
+    height: 400
+>>>>>>> parent of d89451b (UI)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 8}
@@ -529,6 +598,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 441
     y: 73
     width: 825
@@ -540,10 +610,13 @@ MonoBehaviour:
     height: 836
 >>>>>>> Grafiikka-Aleksi
 =======
+=======
+>>>>>>> parent of d89451b (UI)
     x: 1296
     y: 321
     width: 387
     height: 379
+<<<<<<< HEAD
 >>>>>>> parent of d89451b (UI)
 =======
     x: 446
@@ -551,6 +624,8 @@ MonoBehaviour:
     width: 824
     height: 759
 >>>>>>> parent of d879ce0 (Update)
+=======
+>>>>>>> parent of d89451b (UI)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -811,6 +886,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 3.1959794, y: 21.124613, z: 1.3965958}
     speed: 2
     m_Value: {x: 3.1959794, y: 21.124613, z: 1.3965958}
@@ -829,6 +905,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -1.2922235, y: 32.615566, z: -0.022659205}
 >>>>>>> parent of d879ce0 (Update)
+=======
+    m_Target: {x: -0.3459996, y: 38.228058, z: -0.74795943}
+    speed: 2
+    m_Value: {x: -0.3459996, y: 38.228058, z: -0.74795943}
+>>>>>>> parent of d89451b (UI)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -882,6 +963,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 29.803204
     speed: 2
     m_Value: 29.803204
@@ -900,6 +982,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 4.5961266
 >>>>>>> parent of d879ce0 (Update)
+=======
+    m_Target: 47.43105
+    speed: 2
+    m_Value: 47.43105
+>>>>>>> parent of d89451b (UI)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1028,6 +1115,7 @@ MonoBehaviour:
   m_PreviewAnimator: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnimatorController: {fileID: 9100000, guid: 0ae77e2940a03414d960269da89551cd, type: 2}
   m_BreadCrumbs:
   - m_Target: {fileID: 3137101533375495618, guid: 0ae77e2940a03414d960269da89551cd, type: 2}
@@ -1041,6 +1129,11 @@ MonoBehaviour:
   m_BreadCrumbs:
   - m_Target: {fileID: -3570385989527399363, guid: 5ef02e9cc89409d4d966d5f0a89a664e, type: 2}
 >>>>>>> parent of d879ce0 (Update)
+=======
+  m_AnimatorController: {fileID: 9100000, guid: ebb6d67e39ab9df4b9e657f725b4ab0f, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -25287276345878181, guid: ebb6d67e39ab9df4b9e657f725b4ab0f, type: 2}
+>>>>>>> parent of d89451b (UI)
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1070,6 +1163,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1268
     y: 0
     width: 698
@@ -1086,6 +1180,12 @@ MonoBehaviour:
     width: 696
     height: 780
 >>>>>>> parent of d879ce0 (Update)
+=======
+    x: 599
+    y: 0
+    width: 328
+    height: 400
+>>>>>>> parent of d89451b (UI)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -1114,6 +1214,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 782
     width: 1966
     height: 517
@@ -1132,6 +1233,11 @@ MonoBehaviour:
     width: 1968
     height: 519
 >>>>>>> parent of d879ce0 (Update)
+=======
+    y: 400
+    width: 927
+    height: 265
+>>>>>>> parent of d89451b (UI)
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 10}
@@ -1140,9 +1246,12 @@ MonoBehaviour:
   - {fileID: 11}
   m_Selected: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelected: 1
 --- !u!114 &10
 =======
+=======
+>>>>>>> parent of d89451b (UI)
   m_LastSelected: 2
 --- !u!114 &12
 >>>>>>> parent of d89451b (UI)
@@ -1167,6 +1276,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
 <<<<<<< HEAD
     y: 855
@@ -1178,10 +1288,13 @@ MonoBehaviour:
     height: 79
 >>>>>>> Grafiikka-Aleksi
 =======
+=======
+>>>>>>> parent of d89451b (UI)
     x: 1086
     y: 721
     width: 926
     height: 244
+<<<<<<< HEAD
 >>>>>>> parent of d89451b (UI)
 =======
     x: 0
@@ -1189,6 +1302,8 @@ MonoBehaviour:
     width: 1967
     height: 498
 >>>>>>> parent of d879ce0 (Update)
+=======
+>>>>>>> parent of d89451b (UI)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1210,6 +1325,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scenes
 =======
     - Assets/Scripts
@@ -1220,11 +1336,15 @@ MonoBehaviour:
 =======
     - Assets
 >>>>>>> parent of d879ce0 (Update)
+=======
+    - Assets/Scenes/DevScenes
+>>>>>>> parent of d89451b (UI)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1235,6 +1355,9 @@ MonoBehaviour:
 =======
   - Assets
 >>>>>>> parent of d879ce0 (Update)
+=======
+  - Assets/Scenes/DevScenes
+>>>>>>> parent of d89451b (UI)
   m_LastFoldersGridSize: 96
   m_LastProjectPath: E:\Documents\GitHub\2D-Peliprojekti\2D Peliprojekti
 =======
@@ -1246,6 +1369,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1267,6 +1391,11 @@ MonoBehaviour:
     m_LastClickedID: 27240
     m_ExpandedIDs: 00000000686a0000
 >>>>>>> parent of d879ce0 (Update)
+=======
+    m_SelectedIDs: c46b0000
+    m_LastClickedID: 27588
+    m_ExpandedIDs: 000000003a6a00003c6a0000
+>>>>>>> parent of d89451b (UI)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1297,6 +1426,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000f06a0000
 =======
     m_ExpandedIDs: 00000000b86b0000ba6b0000bc6b000000ca9a3b
@@ -1307,6 +1437,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000686a0000
 >>>>>>> parent of d879ce0 (Update)
+=======
+    m_ExpandedIDs: 000000003a6a00003c6a0000
+>>>>>>> parent of d89451b (UI)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1334,6 +1467,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: bc8f0000
     m_LastClickedInstanceID: 36796
     m_HadKeyboardFocusLastEvent: 1
@@ -1349,6 +1483,12 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
 >>>>>>> Grafiikka-Aleksi
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> parent of d89451b (UI)
 =======
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
@@ -1405,6 +1545,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 853
     width: 1967
     height: 498
@@ -1414,6 +1555,11 @@ MonoBehaviour:
     width: 920
     height: 250
 >>>>>>> Grafiikka-Aleksi
+=======
+    y: 854
+    width: 1966
+    height: 497
+>>>>>>> parent of d89451b (UI)
 =======
     y: 854
     width: 1966
@@ -1458,6 +1604,7 @@ MonoBehaviour:
     m_IsLocked: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: -1406
 =======
   m_LastSelectedObjectID: 78488
@@ -1465,6 +1612,9 @@ MonoBehaviour:
 =======
   m_LastSelectedObjectID: -401454
 >>>>>>> parent of d879ce0 (Update)
+=======
+  m_LastSelectedObjectID: 78488
+>>>>>>> parent of d89451b (UI)
 --- !u!114 &15
 =======
 --- !u!114 &12
@@ -1483,6 +1633,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1508,6 +1659,12 @@ MonoBehaviour:
     width: 592
     height: 1299
 >>>>>>> parent of d879ce0 (Update)
+=======
+    x: 927
+    y: 0
+    width: 279
+    height: 665
+>>>>>>> parent of d89451b (UI)
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -1539,6 +1696,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1966
     y: 73
     width: 593
@@ -1550,10 +1708,13 @@ MonoBehaviour:
     height: 936
 >>>>>>> Grafiikka-Aleksi
 =======
+=======
+>>>>>>> parent of d89451b (UI)
     x: 2013
     y: 321
     width: 278
     height: 644
+<<<<<<< HEAD
 >>>>>>> parent of d89451b (UI)
 =======
     x: 1968
@@ -1561,6 +1722,8 @@ MonoBehaviour:
     width: 591
     height: 1278
 >>>>>>> parent of d879ce0 (Update)
+=======
+>>>>>>> parent of d89451b (UI)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
