@@ -108,9 +108,10 @@ GameObject:
   - component: {fileID: 1176138760}
   - component: {fileID: 544239750}
   - component: {fileID: 77712591}
+  - component: {fileID: 1547637140893623718}
   m_Layer: 0
-  m_Name: MainCharacter01
-  m_TagString: Untagged
+  m_Name: MainCharacter
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,7 +173,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2125007769
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 14f79ad59b277a84bb85e6152df1cae4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -231,19 +232,20 @@ MonoBehaviour:
   crouchingCollider: {fileID: 544239750}
   speed: 2
   jumpPower: 8
+  damageParticles: {fileID: 5105573908311145243, guid: 00cb3222c82c61d469accff5b7beb819, type: 3}
   runValue: 1
   crouchValue: 0.5
   headCheckLength: 0.3
   yMaxValue: 4
   yMinValue: -4
   wallSlidingSpeed: 1
+  wallJumpingTime: 0.2
+  wallJumpingDuration: 0.4
   isWallSliding: 0
   isGrounded: 0
   isRunning: 0
   isCrouched: 0
   isWallJumping: 0
-  wallJumpingTime: 0.2
-  wallJumpingDuration: 0.4
   walljumpingPower: {x: 8, y: 16}
 --- !u!95 &1176138760
 Animator:
@@ -295,7 +297,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14296556, y: -0.09885919}
+  m_Offset: {x: 0.14296556, y: -0.07}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -308,3 +310,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49087477, y: 1.3022816}
   m_EdgeRadius: 0
+--- !u!114 &1547637140893623718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6841598977803468976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb70972787d5d254e8e4c679e597a904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hitPointsRemaining: 3
