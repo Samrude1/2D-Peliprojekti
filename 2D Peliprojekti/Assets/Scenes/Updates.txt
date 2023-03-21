@@ -20,4 +20,5 @@ Testaillaan onko 3 osumaa hyvä. Toinen vaihtoehto on laittaa HP_palkki ja hp:t 
 
 
 
+
 ---------------------------------
