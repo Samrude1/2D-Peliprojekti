@@ -4631,4 +4631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d64c1f5892df7746815ea7840d92021, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of d89451b (UI)
+=======
 >>>>>>> parent of d89451b (UI)
