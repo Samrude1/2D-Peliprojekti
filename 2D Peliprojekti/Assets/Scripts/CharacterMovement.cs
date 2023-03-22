@@ -264,6 +264,7 @@ public class CharacterMovement : MonoBehaviour
         if (collision.gameObject.tag == "Hazard")
         {
             Instantiate(damageParticles, transform.position, Quaternion.identity);
+            ScreenShakeController.instance.StartShake(0.2f, 0.2f);
         }
     }
 
