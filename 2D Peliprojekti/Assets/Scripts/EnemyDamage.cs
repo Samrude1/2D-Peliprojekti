@@ -32,7 +32,7 @@ public class EnemyDamage : MonoBehaviour
             audioSource.clip = damageClip;
             audioSource.Play();
             livesCounter.LoseHitPoint();
-            ScreenShakeController.instance.StartShake(0.2f, 0.2f);
+            //ScreenShakeController.instance.StartShake(0.2f, 0.2f);
         }
     }
 
