@@ -32,7 +32,7 @@ public class CharacterMovement : MonoBehaviour
 
     public bool isWallSliding;
     private bool isFacingRight = true;
-    public bool isGrounded = false;     //N‰‰ boolit on viel‰ kehityvaiheessa public ni n‰kee mit‰ hahmo tekee pelin aikana
+    public bool isGrounded = false;     //N‰‰ boolit on viel‰ kehitysvaiheessa public ni n‰kee mit‰ hahmo tekee pelin aikana
     public bool isRunning = false;
     public bool isCrouched = false;
     public bool isWallJumping;
