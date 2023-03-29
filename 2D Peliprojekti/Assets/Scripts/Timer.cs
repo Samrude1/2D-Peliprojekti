@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     float currentTime = 0f;
     float startingTime = 0f;
+    //float recordTime;
     [SerializeField] TextMeshProUGUI timerText;
 
 
@@ -15,6 +16,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         currentTime = startingTime;
+        //recordTime = 
     }
 
     // Update is called once per frame
