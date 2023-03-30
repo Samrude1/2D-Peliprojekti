@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -276,7 +277,9 @@ public class CharacterMovement : MonoBehaviour
         {
             timer.LogRecordtTime();
             Debug.Log("GOOOOOL");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
+        
 }
