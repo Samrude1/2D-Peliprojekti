@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class CharacterMovement : MonoBehaviour
 
     public bool isWallSliding;
     private bool isFacingRight = true;
-    public bool isGrounded = false;     //N‰‰ boolit on viel‰ kehityvaiheessa public ni n‰kee mit‰ hahmo tekee pelin aikana
+    public bool isGrounded = false;     //N‰‰ boolit on viel‰ kehitysvaiheessa public ni n‰kee mit‰ hahmo tekee pelin aikana
     public bool isRunning = false;
     public bool isCrouched = false;
     public bool isWallJumping;
@@ -40,13 +41,14 @@ public class CharacterMovement : MonoBehaviour
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
     
     Animator animator;
-
+    Timer timer;
    
     // Start is called before the first frame update
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        timer = FindAnyObjectByType<Timer>();
     }
 
     // Update is called once per frame
@@ -266,7 +268,18 @@ public class CharacterMovement : MonoBehaviour
             Instantiate(damageParticles, transform.position, Quaternion.identity);
             ScreenShakeController.instance.StartShake(0.2f, 0.2f);
         }
+
+       
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Goal")
+        {
+            timer.LogRecordtTime();
+            Debug.Log("GOOOOOL");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
-
+        
 }

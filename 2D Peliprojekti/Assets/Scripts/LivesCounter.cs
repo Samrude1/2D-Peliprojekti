@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LivesCounter : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class LivesCounter : MonoBehaviour
         if (hitPointsRemaining <= 0)
         {
             Debug.Log("YOU LOST");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
     }
