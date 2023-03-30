@@ -40,13 +40,14 @@ public class CharacterMovement : MonoBehaviour
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
     
     Animator animator;
-
+    Timer timer;
    
     // Start is called before the first frame update
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        timer = FindAnyObjectByType<Timer>();
     }
 
     // Update is called once per frame
@@ -266,7 +267,16 @@ public class CharacterMovement : MonoBehaviour
             Instantiate(damageParticles, transform.position, Quaternion.identity);
             ScreenShakeController.instance.StartShake(0.2f, 0.2f);
         }
-    }
 
+       
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Goal")
+        {
+            timer.LogRecordtTime();
+            Debug.Log("GOOOOOL");
+        }
+    }
 
 }
