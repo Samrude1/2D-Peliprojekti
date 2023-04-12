@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 4784913426233618198}
   - component: {fileID: 4784913426233618199}
   - component: {fileID: 4784913426233618196}
+  - component: {fileID: 888078183}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Hazard
@@ -244,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce9e64efc0ee114b8fc0136f081d0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageClip: {fileID: 8300000, guid: 87fa6aa55c74b2f4c9e9dccd4e158e7f, type: 3}
+  damageClip: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
 --- !u!82 &4784913426233618196
 AudioSource:
   m_ObjectHideFlags: 0
@@ -341,3 +342,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &888078183
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784913426233618202}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a6c119ce715f554e98c949ccae30735, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

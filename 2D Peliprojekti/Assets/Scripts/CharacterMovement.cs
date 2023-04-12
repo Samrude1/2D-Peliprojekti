@@ -16,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] float jumpPower = 250;
     [SerializeField] GameObject damageParticles;
+    [SerializeField] AudioClip footSteps, jump, wallJump, crouchSteps;
 
     const float groundCheckRadius = 0.2f;
     //const float overheadCheckRadius = 0.2f; // Vaihdoin tän Raycastiin
@@ -37,15 +38,16 @@ public class CharacterMovement : MonoBehaviour
     public bool isRunning = false;
     public bool isCrouched = false;
     public bool isWallJumping;
-   
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
-    
+
+    AudioSource audioSource;
     Animator animator;
     Timer timer;
    
     // Start is called before the first frame update
     void Awake()
     {
+        audioSource= GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         timer = FindAnyObjectByType<Timer>();
@@ -55,7 +57,6 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
-        
         Crouch();
         Jump();
         Run();
@@ -113,13 +114,15 @@ public class CharacterMovement : MonoBehaviour
         
         animator.SetFloat("yVelocity", rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {    
+        if (Input.GetButtonDown("Jump") && isGrounded && !isCrouched)
+        {
+            audioSource.clip = jump;
+            audioSource.Play();
             rb.AddForce(new Vector2(0f, jumpPower * 100f));
             isGrounded = false;
             wallJumpingTime = 0;
             wallJumpingDuration = 0;
-            wallJumpingCounter = 0;
+            wallJumpingCounter = 0;   
         }
         else if(!isGrounded)
         {
@@ -231,11 +234,13 @@ public class CharacterMovement : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0)
         {
+            audioSource.clip = wallJump;
+            audioSource.Play();
             isWallJumping = true;
             rb.velocity = new Vector2(wallJumpingDirection * walljumpingPower.x, walljumpingPower.y);
             wallJumpingCounter = 0f;
 
-            if(transform.localScale.x != wallJumpingDirection)
+            if (transform.localScale.x != wallJumpingDirection)
             {
                 isFacingRight = !isFacingRight;
                 Vector3 localScale = transform.localScale;
@@ -281,5 +286,17 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-        
+   public void PlayFootsteps()
+    {
+        audioSource.clip = footSteps;
+        audioSource.Play();
+    }
+    public void CrouchCteps()
+    {
+        audioSource.clip = crouchSteps;
+        audioSource.Play();
+    }
+
+
+
 }
