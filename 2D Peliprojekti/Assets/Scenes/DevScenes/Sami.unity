@@ -1855,14 +1855,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackGroundMusic
       objectReference: {fileID: 0}
-    - target: {fileID: 2462292460679417021, guid: 23f0d78fef0a6584aa6e61c10a79a79c, type: 3}
-      propertyPath: Mute
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2462292460679417021, guid: 23f0d78fef0a6584aa6e61c10a79a79c, type: 3}
-      propertyPath: m_Volume
-      value: 0.445
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f0d78fef0a6584aa6e61c10a79a79c, type: 3}
 --- !u!1001 &6494195861813841709
