@@ -252,6 +252,7 @@ MonoBehaviour:
   isCrouched: 0
   isWallJumping: 0
   walljumpingPower: {x: 8, y: 16}
+  levelCompletePanel: {fileID: 0}
 --- !u!95 &1176138760
 Animator:
   serializedVersion: 5
@@ -332,6 +333,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   hitPointsRemaining: 3
+  gameOverPanel: {fileID: 0}
+  audioPlayer: {fileID: 0}
 --- !u!82 &1311374937
 AudioSource:
   m_ObjectHideFlags: 0

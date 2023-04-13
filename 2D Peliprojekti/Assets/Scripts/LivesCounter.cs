@@ -8,12 +8,16 @@ public class LivesCounter : MonoBehaviour
 {
     public Image[] hitPoints;
     public int hitPointsRemaining;
-    
+    public GameObject gameOverPanel;
+    CharacterMovement characterMovement;
+    //ScreenShakeController screenShakeController;
+    public AudioSource audioPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       characterMovement = FindObjectOfType<CharacterMovement>();
+       //screenShakeController = GetComponent<ScreenShakeController>();
     }
 
     // Update is called once per frame
@@ -34,7 +38,12 @@ public class LivesCounter : MonoBehaviour
         if (hitPointsRemaining <= 0)
         {
             Debug.Log("YOU LOST");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0;
+            characterMovement.enabled = false;
+            ScreenShakeController.instance.enabled = false;
+            audioPlayer.enabled= false;
+
         }
 
     }

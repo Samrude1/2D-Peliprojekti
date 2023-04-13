@@ -39,7 +39,8 @@ public class CharacterMovement : MonoBehaviour
     public bool isCrouched = false;
     public bool isWallJumping;
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
-
+    public GameObject levelCompletePanel;
+    public GameObject musicPlayer;
     AudioSource audioSource;
     Animator animator;
     Timer timer;
@@ -281,8 +282,9 @@ public class CharacterMovement : MonoBehaviour
         if(collision.gameObject.tag == "Goal")
         {
             timer.LogRecordtTime();
-            Debug.Log("GOOOOOL");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            levelCompletePanel.SetActive(true);
+            Time.timeScale = 0;
+            musicPlayer.SetActive(false);
         }
     }
 

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Timer : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class Timer : MonoBehaviour
     public float recordTime = 300f;
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] TextMeshProUGUI recordTimeText;
-    
+    [SerializeField] GameObject pauseScreen;
+    public bool isPaused = false;
 
     private void Awake()
     {  
@@ -33,6 +35,7 @@ public class Timer : MonoBehaviour
         currentTime += 1 * Time.deltaTime;
         timerText.text = currentTime.ToString("0.0");
         DeleteFloat();
+        PauseMenu();
     }
 
     public void LogRecordtTime()
@@ -59,8 +62,26 @@ public class Timer : MonoBehaviour
         }
     }
 
-      
-    
+    void PauseMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (pauseScreen.activeSelf)
+            {
+                pauseScreen.SetActive(false);
+                Time.timeScale = 1f;
+                characterMovement.enabled = true;
+            }
+
+            else
+            {
+                pauseScreen.SetActive(true);
+                Time.timeScale = 0;
+                characterMovement.enabled = false;
+            }
+        }
+
+    }
 
 
 
