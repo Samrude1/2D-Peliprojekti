@@ -98088,6 +98088,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2599087185954257212}
+    - target: {fileID: 8577681828977932395, guid: 85144fd0fe66d5849942ef0586dc4ef3, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7529412
+      objectReference: {fileID: 0}
     - target: {fileID: 8577681829130927442, guid: 85144fd0fe66d5849942ef0586dc4ef3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
