@@ -87,43 +87,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hell enemy1 Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 6617502367337503115, guid: 3a24b94cacdda694c8e98da3046364f7, type: 3}
-      propertyPath: m_TagString
-      value: Hazard
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a24b94cacdda694c8e98da3046364f7, type: 3}
---- !u!1 &2865002478752551532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6617502367337503115, guid: 3a24b94cacdda694c8e98da3046364f7, type: 3}
-  m_PrefabInstance: {fileID: 8940946827148889063}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &4304941110842379209
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2865002478752551532}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.002849996, y: -0.012309581}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.92, y: 1.43}
-    newSize: {x: 0.92, y: 1.43}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.90442, y: 1.4077799}
-  m_EdgeRadius: 0
 --- !u!4 &3957972903864637973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5402371932926808562, guid: 3a24b94cacdda694c8e98da3046364f7, type: 3}
