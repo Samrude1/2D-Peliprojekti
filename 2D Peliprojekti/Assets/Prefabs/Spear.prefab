@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce9e64efc0ee114b8fc0136f081d0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageClip: {fileID: 8300000, guid: 87fa6aa55c74b2f4c9e9dccd4e158e7f, type: 3}
+  damageClip: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
 --- !u!82 &2528589574945168988
 AudioSource:
   m_ObjectHideFlags: 0
@@ -261,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2528589575441885194}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spear
   m_TagString: Untagged
   m_Icon: {fileID: 0}

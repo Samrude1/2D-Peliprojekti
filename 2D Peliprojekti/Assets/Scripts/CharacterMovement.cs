@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] float jumpPower = 250;
     [SerializeField] GameObject damageParticles;
+    [SerializeField] AudioClip footSteps, jump, wallJump, crouchSteps;
 
     const float groundCheckRadius = 0.2f;
     //const float overheadCheckRadius = 0.2f; // Vaihdoin t‰n Raycastiin
@@ -32,28 +34,30 @@ public class CharacterMovement : MonoBehaviour
 
     public bool isWallSliding;
     private bool isFacingRight = true;
-    public bool isGrounded = false;     //N‰‰ boolit on viel‰ kehityvaiheessa public ni n‰kee mit‰ hahmo tekee pelin aikana
+    public bool isGrounded = false;     //N‰‰ boolit on viel‰ kehitysvaiheessa public ni n‰kee mit‰ hahmo tekee pelin aikana
     public bool isRunning = false;
     public bool isCrouched = false;
     public bool isWallJumping;
-   
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
-    
+    public GameObject levelCompletePanel;
+    public GameObject musicPlayer;
+    AudioSource audioSource;
     Animator animator;
-
+    Timer timer;
    
     // Start is called before the first frame update
     void Awake()
     {
+        audioSource= GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        timer = FindAnyObjectByType<Timer>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
-        
         Crouch();
         Jump();
         Run();
@@ -111,13 +115,15 @@ public class CharacterMovement : MonoBehaviour
         
         animator.SetFloat("yVelocity", rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {    
+        if (Input.GetButtonDown("Jump") && isGrounded && !isCrouched)
+        {
+            audioSource.clip = jump;
+            audioSource.Play();
             rb.AddForce(new Vector2(0f, jumpPower * 100f));
             isGrounded = false;
             wallJumpingTime = 0;
             wallJumpingDuration = 0;
-            wallJumpingCounter = 0;
+            wallJumpingCounter = 0;   
         }
         else if(!isGrounded)
         {
@@ -229,11 +235,13 @@ public class CharacterMovement : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0)
         {
+            audioSource.clip = wallJump;
+            audioSource.Play();
             isWallJumping = true;
             rb.velocity = new Vector2(wallJumpingDirection * walljumpingPower.x, walljumpingPower.y);
             wallJumpingCounter = 0f;
 
-            if(transform.localScale.x != wallJumpingDirection)
+            if (transform.localScale.x != wallJumpingDirection)
             {
                 isFacingRight = !isFacingRight;
                 Vector3 localScale = transform.localScale;
@@ -266,7 +274,31 @@ public class CharacterMovement : MonoBehaviour
             Instantiate(damageParticles, transform.position, Quaternion.identity);
             ScreenShakeController.instance.StartShake(0.2f, 0.2f);
         }
+
+       
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Goal")
+        {
+            timer.LogRecordtTime();
+            levelCompletePanel.SetActive(true);
+            Time.timeScale = 0;
+            musicPlayer.SetActive(false);
+        }
+    }
+
+   public void PlayFootsteps()
+    {
+        audioSource.clip = footSteps;
+        audioSource.Play();
+    }
+    public void CrouchCteps()
+    {
+        audioSource.clip = crouchSteps;
+        audioSource.Play();
+    }
+
 
 
 }
