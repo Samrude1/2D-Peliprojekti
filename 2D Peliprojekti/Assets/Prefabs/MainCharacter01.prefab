@@ -253,6 +253,7 @@ MonoBehaviour:
   isWallJumping: 0
   walljumpingPower: {x: 8, y: 16}
   levelCompletePanel: {fileID: 0}
+  musicPlayer: {fileID: 0}
 --- !u!95 &1176138760
 Animator:
   serializedVersion: 5

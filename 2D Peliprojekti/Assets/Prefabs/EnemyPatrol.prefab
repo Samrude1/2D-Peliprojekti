@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b29f3f1fc5baf479ed83cb1229783c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   groundDetection: {fileID: 4784913425889632440}
   wallDetection: {fileID: 4784913425770300930}
   distance: 0.2

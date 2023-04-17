@@ -293,7 +293,7 @@ public class CharacterMovement : MonoBehaviour
         audioSource.clip = footSteps;
         audioSource.Play();
     }
-    public void CrouchCteps()
+   public void CrouchCteps()
     {
         audioSource.clip = crouchSteps;
         audioSource.Play();

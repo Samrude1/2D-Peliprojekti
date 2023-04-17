@@ -48584,6 +48584,10 @@ PrefabInstance:
       value: MainCharacter01
       objectReference: {fileID: 0}
     - target: {fileID: 6841598977803468981, guid: b286e5a1018e25d42ab9fdc5aae8ab86, type: 3}
+      propertyPath: musicPlayer
+      value: 
+      objectReference: {fileID: 2078590568}
+    - target: {fileID: 6841598977803468981, guid: b286e5a1018e25d42ab9fdc5aae8ab86, type: 3}
       propertyPath: levelCompletePanel
       value: 
       objectReference: {fileID: 1970407991}
@@ -86628,6 +86632,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2528589575441885194, guid: 0c5453ef7f1801346b2866499b395580, type: 3}
   m_PrefabInstance: {fileID: 260754424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2078590568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2462292460679417020, guid: 23f0d78fef0a6584aa6e61c10a79a79c, type: 3}
+  m_PrefabInstance: {fileID: 1181646411}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2087765711
 GameObject:
