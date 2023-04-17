@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     public static SceneLoader instance;
     public GameObject levelCompletePanel;
+    
 
 
 
@@ -15,7 +16,10 @@ public class SceneLoader : MonoBehaviour
         instance = this;
 
     }
-
+    private void Update()
+    {
+        
+    }
     public void MainMenu()
     {
 
@@ -57,6 +61,6 @@ public class SceneLoader : MonoBehaviour
         Application.Quit();
     }
 
-
+    
 
 }
