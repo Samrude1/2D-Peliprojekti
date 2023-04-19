@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class GuideOff : MonoBehaviour
 {
-    public GameObject guideOff;
+    public GameObject guidePanel;
+
     // Start is called before the first frame update
     void Start()
     {
+        guidePanel.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -19,7 +21,7 @@ public class GuideOff : MonoBehaviour
 
     public void GuideOffPanel()
     {
-        guideOff.SetActive(false);
+        guidePanel.SetActive(false);
         Time.timeScale = 1;
     }
 }
