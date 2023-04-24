@@ -1,0 +1,24 @@
+21.3.2023
+
+Uutta:
+
+* Player health on 3 osumaa.
+* Osumasta iskee partikkelit, screenshake ja ääni.
+
+Muutoksia:
+
+* Sirppi ja Piikki on nyt prefabeissa animointeineen ja scripteineen. Pitäisi pystyä vain drag and drop to level.
+* MainCamera on myös prefabeissa, sitä voi käyttää ja nakkkaa vanhan pois. Tai sitten lisää vanhaan kameraan ScreenShakeController scriptin.
+* Layer asetuksia muutettu, käytetty Layers sivulta Sorting Layers listaa. Player on Player, hazards on Hazards jne... 
+Tämä siis määrittää millä priolla asiat ruudulla näkyy. Ja sirpillä/piikillä esim. on myös normaali Layer valittu Hazards. 
+Ja vieläpä gameobject Tag on Hazard, scripti tarvitsee sen.
+* UI on prefab, siinä laitoin defaulttina vaan hahmot hp:n kuviksi. Laittakaa sydämet tai mitä vaan.
+* Damage-efektissä oli hankaluuksia saada hahmolle knockback_osuma toimimaan sujuvasti, joten laitoin siksi screenshaken ja partikkelit. 
+Noi def veripisarat voi ideoida mihin haluaa, pääkalloja tai tähtiä jne... Sama damagen ääni on vaan netistä napattu, perus "Uuhhh...".
+* Nyt jos ottaa kolme osumaa, screenshake lakkaa toimimasta kun hp:t on loppu, normaalisti pelikin olisi siis loppu.
+Testaillaan onko 3 osumaa hyvä. Toinen vaihtoehto on laittaa HP_palkki ja hp:t vaikka sataan. Sit saa kerätä vapaasti damagee.
+
+
+
+
+---------------------------------
