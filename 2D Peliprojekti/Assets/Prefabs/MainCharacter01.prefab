@@ -235,8 +235,8 @@ MonoBehaviour:
   jumpPower: 8
   damageParticles: {fileID: 5105573908311145243, guid: 00cb3222c82c61d469accff5b7beb819, type: 3}
   footSteps: {fileID: 8300000, guid: 1f0199a4c6005ec4abbb302f71bc036d, type: 3}
-  jump: {fileID: 8300000, guid: 81652031b64c342cc8dbc59c138d77c5, type: 3}
-  wallJump: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  jump: {fileID: 8300000, guid: ec75a3917a2ef1e4c991407f2ab04a66, type: 3}
+  wallJump: {fileID: 8300000, guid: c14f1bad3d93f2e46854f89a68a625b7, type: 3}
   crouchSteps: {fileID: 8300000, guid: 50ad27f2e46a7074e9864dbad1e7eade, type: 3}
   runValue: 1
   crouchValue: 0.5
@@ -253,6 +253,7 @@ MonoBehaviour:
   isWallJumping: 0
   walljumpingPower: {x: 8, y: 16}
   levelCompletePanel: {fileID: 0}
+  musicPlayer: {fileID: 0}
 --- !u!95 &1176138760
 Animator:
   serializedVersion: 5

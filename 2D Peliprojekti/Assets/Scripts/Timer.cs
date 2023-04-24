@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class Timer : MonoBehaviour
         timerText.text = currentTime.ToString("0.0");
         DeleteFloat();
         PauseMenu();
+        Menu();
     }
 
     public void LogRecordtTime()
@@ -55,7 +57,7 @@ public class Timer : MonoBehaviour
 
     public void DeleteFloat()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) 
+        if (Input.GetKeyDown(KeyCode.R)) 
         {
             PlayerPrefs.DeleteKey("Best Time");
             Debug.Log("TIME DELETED");
@@ -81,6 +83,13 @@ public class Timer : MonoBehaviour
             }
         }
 
+    }
+    public void Menu()
+    {
+       if(Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
 
