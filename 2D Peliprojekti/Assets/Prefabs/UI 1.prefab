@@ -149,12 +149,12 @@ GameObject:
   - component: {fileID: 1322797325}
   - component: {fileID: 1322797324}
   m_Layer: 5
-  m_Name: GuiedPanel
+  m_Name: GuidePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1322797323
 RectTransform:
   m_ObjectHideFlags: 0
@@ -955,6 +955,7 @@ MonoBehaviour:
   recordTimeText: {fileID: 8577681829105984516}
   pauseScreen: {fileID: 447980586452321136}
   pauseMenuScreen: {fileID: 8739763984076188569}
+  guidePanel: {fileID: 1322797322}
   isPaused: 0
 --- !u!1 &3835253157126256383
 GameObject:
@@ -3001,7 +3002,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
