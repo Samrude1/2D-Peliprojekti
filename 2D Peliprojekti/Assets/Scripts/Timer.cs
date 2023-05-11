@@ -16,8 +16,6 @@ public class Timer : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] TextMeshProUGUI recordTimeText;
     [SerializeField] GameObject pauseScreen;
-    [SerializeField] GameObject pauseMenuScreen;
-    [SerializeField] GameObject guidePanel;
     public bool isPaused = false;
 
     private void Awake()
@@ -38,7 +36,7 @@ public class Timer : MonoBehaviour
         currentTime += 1 * Time.deltaTime;
         timerText.text = currentTime.ToString("0.0");
         DeleteFloat();
-        //PauseMenu();
+        PauseMenu();
         Menu();
     }
 
@@ -66,52 +64,33 @@ public class Timer : MonoBehaviour
         }
     }
 
-    
-    //void PauseMenu()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.P))
-    //    {
-    //        if (pauseScreen.activeSelf)
-    //        {
-    //            isPaused = false;
-    //            pauseScreen.SetActive(false);
-    //            Time.timeScale = 1f;
-    //            characterMovement.enabled = true;
-    //        }
-    //
-    //        else
-    //        {
-    //            isPaused = true;
-    //            pauseScreen.SetActive(true);
-    //            Time.timeScale = 0;
-    //            characterMovement.enabled = false;
-    //        }
-    //     }
-    
-
-    //}
-    public void Menu()
+    void PauseMenu()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            if (pauseMenuScreen.activeSelf)
+            if (pauseScreen.activeSelf)
             {
-                isPaused = false;
-                pauseMenuScreen.SetActive(false);
+                pauseScreen.SetActive(false);
                 Time.timeScale = 1f;
                 characterMovement.enabled = true;
             }
 
             else
             {
-                guidePanel.SetActive(false);
-                isPaused = true;
-                pauseMenuScreen.SetActive(true);
+                pauseScreen.SetActive(true);
                 Time.timeScale = 0;
                 characterMovement.enabled = false;
             }
         }
+
     }
-    
+    public void Menu()
+    {
+       if(Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
 
 }
