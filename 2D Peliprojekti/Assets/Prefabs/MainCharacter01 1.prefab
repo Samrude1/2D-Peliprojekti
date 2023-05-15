@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb70972787d5d254e8e4c679e597a904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTimeout: 1
+  damageTimeout: 0.5
   player: {fileID: 1848846294324464135}
   dieParticles: {fileID: 0}
   hitPoints:
