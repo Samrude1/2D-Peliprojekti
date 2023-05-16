@@ -35,7 +35,7 @@ public class CharacterMovement : MonoBehaviour
     public bool isWallSliding;
     private bool isFacingRight = true;
     public bool isGrounded = false;     //N‰‰ boolit on viel‰ kehitysvaiheessa public ni n‰kee mit‰ hahmo tekee pelin aikana
-    public bool isWalking = false;
+    public bool isRunning = false;
     public bool isCrouched = false;
     public bool isWallJumping;
     public Vector2 walljumpingPower = new Vector2(8f, 16f);
@@ -60,7 +60,7 @@ public class CharacterMovement : MonoBehaviour
         horizontalMovement = Input.GetAxisRaw("Horizontal");
         Crouch();
         Jump();
-        Walk();
+        Run();
         WallSlide();
         WallJump();
 
@@ -143,20 +143,20 @@ public class CharacterMovement : MonoBehaviour
         
     }
 
-    void Walk()
+    void Run()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            isWalking = true;
+            isRunning = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            isWalking = false;
+            isRunning = false;
         }
 
-        if (isWalking)
+        if (isRunning)
         {
-            runValue = 0.3f;
+            runValue = 2f;
         }
         else
         {
@@ -290,11 +290,8 @@ public class CharacterMovement : MonoBehaviour
 
    public void PlayFootsteps()
     {
-        if (isGrounded)
-        {
-            audioSource.clip = footSteps;
-            audioSource.Play();
-        }
+        audioSource.clip = footSteps;
+        audioSource.Play();
     }
    public void CrouchCteps()
     {
