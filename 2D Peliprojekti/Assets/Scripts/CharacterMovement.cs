@@ -299,6 +299,4 @@ public class CharacterMovement : MonoBehaviour
         audioSource.Play();
     }
 
-
-
 }

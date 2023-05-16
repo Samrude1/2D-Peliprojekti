@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 38902672}
   - component: {fileID: 38902671}
   m_Layer: 5
-  m_Name: GuiedPanel
+  m_Name: GuidePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b8079dd95e90ec84ba951426e98bff77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dbc05b31833b4b64db2e59444c768808, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
