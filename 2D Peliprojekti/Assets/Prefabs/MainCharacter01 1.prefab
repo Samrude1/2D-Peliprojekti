@@ -138,7 +138,7 @@ MonoBehaviour:
     m_Bits: 128
   standingCollider: {fileID: 5141516401571710584}
   crouchingCollider: {fileID: 5141516401098848817}
-  speed: 2
+  speed: 4
   jumpPower: 8
   damageParticles: {fileID: 5105573908311145243, guid: 00cb3222c82c61d469accff5b7beb819, type: 3}
   footSteps: {fileID: 8300000, guid: 1f0199a4c6005ec4abbb302f71bc036d, type: 3}
@@ -155,7 +155,7 @@ MonoBehaviour:
   wallJumpingDuration: 0.4
   isWallSliding: 0
   isGrounded: 0
-  isRunning: 0
+  isWalking: 0
   isCrouched: 0
   isWallJumping: 0
   walljumpingPower: {x: 8, y: 16}
@@ -236,6 +236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb70972787d5d254e8e4c679e597a904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageTimeout: 0.5
+  player: {fileID: 1848846294324464135}
+  dieParticles: {fileID: 0}
   hitPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -252,7 +255,7 @@ AudioSource:
   m_GameObject: {fileID: 1848846294324464135}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7716148060809764135, guid: 1549951a80c56e64d9fab59587d21c33, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

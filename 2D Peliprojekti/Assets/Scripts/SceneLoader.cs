@@ -7,7 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     public static SceneLoader instance;
     public GameObject levelCompletePanel;
-    
+    public GameObject optionsScreen;
 
 
 
@@ -26,9 +26,9 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
 
-        if (!PlayerPrefs.HasKey("HighScore"))
+        if (!PlayerPrefs.HasKey("Best Time"))
         {
-            PlayerPrefs.SetInt("HighScore", 0);
+            PlayerPrefs.SetInt("Best Time", 0);
         }
     }
 
@@ -53,7 +53,12 @@ public class SceneLoader : MonoBehaviour
 
     public void Options()
     {
-        //SceneManager.LoadScene("Options");
+        optionsScreen.SetActive(true);
+    }
+
+    public void CloseOptions()
+    {
+        optionsScreen.SetActive(false);
     }
 
     public void Quit()

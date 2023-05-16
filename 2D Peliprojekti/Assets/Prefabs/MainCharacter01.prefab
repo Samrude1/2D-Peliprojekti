@@ -127,7 +127,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.37, y: -2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2566541982449570587}
   - {fileID: 1712778027}
@@ -246,9 +246,10 @@ MonoBehaviour:
   wallSlidingSpeed: 1
   wallJumpingTime: 0.2
   wallJumpingDuration: 0.4
+  hit: {x: 1, y: 1}
   isWallSliding: 0
   isGrounded: 0
-  isRunning: 0
+  isWalking: 0
   isCrouched: 0
   isWallJumping: 0
   walljumpingPower: {x: 8, y: 16}
@@ -329,6 +330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb70972787d5d254e8e4c679e597a904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 6841598977803468976}
+  dieParticles: {fileID: 0}
   hitPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -345,7 +348,7 @@ AudioSource:
   m_GameObject: {fileID: 6841598977803468976}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7716148060809764135, guid: 1549951a80c56e64d9fab59587d21c33, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
