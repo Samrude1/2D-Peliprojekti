@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d898614231a72f47871341af5223b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minValues: {x: -0.6, y: -200, z: -10}
+  minValues: {x: -0.6, y: -250, z: -10}
   maxValues: {x: 0.6, y: 250, z: -10}
   target: {fileID: 0}
 --- !u!114 &742877519706935326
